@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NiceVideo Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div class="Logo">
+      <a href=""
+        ><h1>Nice<span>VIDEO</span></h1></a
+      >
+    </div>
+    <form class="login">
+      <h2>Login</h2>
+      <label class="username">
+        <input
+          type="text"
+          id="phone"
+          class="input user"
+          onkeyup="changeEvent(this)"
+        />
+        <label for="phone" class="label" id="userLabel"
+          >Phone or Username</label
+        >
+      </label>
+      <br />
+      <label class="password">
+        <input
+          type="password"
+          id="password"
+          class="input pass"
+          onkeyup="changeEvent(this)"
+        />
+        <label for="password" class="label" id="passwordLabel">Password</label>
+      </label>
+      <div>
+        <input type="submit" value="Login" />
+      </div>
+
+      <div class="now">
+        <span>New Member? </span>
+        <a href="">Sign up now</a>
+      </div>
+    </form>
+  </body>
+
+  <script>
+    var username = "";
+    var password = "";
+
+    function changeEvent(e) {
+      var userLabel = document.getElementById("userLabel");
+      var passwordLabel = document.getElementById("passwordLabel");
+      switch (e.type) {
+        case "password":
+          password = e.value;
+        default:
+          username = e.value;
+      }
+
+      console.log(username, password);
+
+      if (username) {
+        userLabel.classList.add("shrinkLabel");
+      } else {
+        userLabel.classList.remove("shrinkLabel");
+      }
+      if (password) {
+        passwordLabel.classList.add("shrinkLabel");
+      } else {
+        passwordLabel.classList.remove("shrinkLabel");
+      }
+    }
+  </script>
+</html>

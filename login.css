@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #ff0000;
+}
+h1 {
+  margin-left: 4%;
+}
+
+.login {
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  text-align: center;
+  margin: auto;
+}
+
+.username,
+.password {
+  position: relative;
+  margin: 20px;
+  display: inline-block;
+}
+
+.label {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  color: #8c8c8c;
+  transition: top 0.1s;
+}
+
+.input {
+  border-radius: 4px;
+  height: 50px;
+  line-height: 100px;
+  padding: 16px 20px 0;
+  font-size: 15px;
+}
+
+.shrinkLabel {
+  font-size: 12px;
+  top: 21%;
+}
+
+input:focus + label {
+  font-size: 12px;
+  top: 21%;
+}
+
+@media screen and (max-width: 666px) {
+  .login {
+    width: 80vw;
+  }
+  .username,
+  .password {
+    margin: 10px;
+  }
+}
+
+input[type="submit"] {
+  width: 260px;
+  color: white;
+  border: 0;
+  height: 50px;
+  background-color: #ff0000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e10909;
+}
+
+.now {
+  margin-top: 140px;
+}
+
+.now span {
+  color: #ff0000;
+}
+
+.now a {
+  color: white;
+}
+
+.now a:hover {
+  text-decoration: underline;
+}
