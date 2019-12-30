@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #ff0000;
+}
+
+h1 {
+  margin: 15px 1% 50px 1%;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.description {
+  margin: 1%;
+  width: 36%;
+  font-size: 14px;
+  min-width: 300px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+form {
+  width: 60%;
+}
+
+.description img {
+  min-width: 300px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+
+.step {
+  background-color: white;
+  position: relative;
+  width: 80%;
+  display: block;
+  padding: 20px;
+  margin: 40px;
+  color: #ff0000;
+  border-radius: 8px;
+  min-height: 100px;
+}
+
+.step2 {
+  height: 200px;
+}
+
+.step p {
+  margin: 15px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ff0000;
+  color: white;
+  top: -30px;
+  left: 10px;
+  border: 2px solid white;
+}
+.circle > span {
+  position: relative;
+  top: 4px;
+  left: 9px;
+}
+
+input {
+  width: 43%;
+  height: 40px;
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.collection {
+  display: flex;
+  justify-content: center;
+}
+
+.type {
+  width: 120px;
+  margin: 0 10%;
+  cursor: pointer;
+  position: relative;
+}
+
+.L {
+  background-color: #ff0000;
+  position: absolute;
+  color: white;
+  transform: rotate(45deg) scaleX(-1);
+  width: 30px;
+  height: 30px;
+  left: 80px;
+  border-radius: 50%;
+}
+
+.L > span {
+  position: relative;
+  top: -3px;
+  left: 10px;
+  font-size: 15px;
+}
+
+small {
+  float: right;
+  position: relative;
+  top: -20px;
+}
+
+.gold,
+.platinum {
+  height: 118.433px;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    width: 18%;
+  }
+  form {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+}
