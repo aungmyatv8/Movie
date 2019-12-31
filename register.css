@@ -49,6 +49,10 @@ form {
   margin-bottom: 4px;
 }
 
+.pay-wave {
+  display: none;
+}
+
 .step {
   background-color: white;
   position: relative;
@@ -67,6 +71,14 @@ form {
 
 .step p {
   margin: 15px;
+}
+
+#gold {
+  display: none;
+}
+
+#wavemoneyMark {
+  display: none;
 }
 
 .circle {
@@ -135,18 +147,58 @@ small {
   height: 118.433px;
 }
 
+.mark {
+  top: 10px;
+}
+
+.payment {
+  width: 15vw;
+}
+
+.step-5 input,
+.pay-bill input {
+  width: 100%;
+  letter-spacing: 3px;
+}
+
+.button input {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+/* .pay-wave {
+  display: none;
+} */
+
+.button input:hover {
+  background-color: #e10909;
+}
+
 @media screen and (max-width: 768px) {
   .description {
     width: 18%;
   }
+  .payment {
+    width: 15vw;
+  }
   form {
     width: 56%;
+  }
+  input {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .description {
     width: 100%;
+  }
+
+  .payment {
+    width: 30vw;
   }
 
   form {

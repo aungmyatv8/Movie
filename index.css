@@ -184,3 +184,7 @@ footer {
   margin: 40px auto;
   font-size: 15px;
 }
+
+.logo span {
+  color: #ff0000;
+}

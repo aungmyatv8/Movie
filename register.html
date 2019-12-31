@@ -10,6 +10,7 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
     />
+   
     <link rel="stylesheet" href="register.css" />
   </head>
   <body>
@@ -39,20 +40,22 @@
           <h2 class="circle"><span>2</span></h2>
           <div class="collection">
             <div class="type">
-              <h2 class="L"><span>L</span></h2>
+              <h2 class="L "  id="platinum"><span>L</span></h2>
               <img
                 src="platinum.png"
-                alt=""
+                alt="platinum"
                 class="platinum"
+                id="platinum-image"         
                 onclick="platinumUser(this)"
               />
             </div>
             <div class="type">
-              <h2 class="L"><span>L</span></h2>
+              <h2 class="L"  id="gold"><span>L</span></h2>
               <img
                 src="gold.png"
-                alt=""
+                alt="gold"
                 class="gold"
+                id="gold-image"         
                 onclick="goldUser(this)"
               />
             </div>
@@ -63,33 +66,47 @@
             <span>Gold User - 10000 KS<span/>
           </small>
         </div>
-        <div class="step3 step">
+        <div class="step">
           <h2 class="circle"><span>3</span></h2>
           <h3>ငွေပေးချေမှု ရွေးရန်</h3>
           <div class="collection">
-            <div class=" type">
-              <h2 class="L"><span>L</span></h2>
-              <img
-                src="wave.png"
-                alt=""
-                class="platinum"
-                onclick="platinumUser(this)"
-              />
+            <div class="type">
+              <h2 class="L mark" id="mytelMark"><span>L</span></h2>
+              <img src="mytel.png" alt="" class="gold payment" onclick="mytel(this)" id="mytelImage"/>
             </div>
-            <div class=" type">
-              <h2 class="L"><span>L</span></h2>
-              <img
-                src="mytel.png"
-                alt=""
-                class="gold"
-                onclick="goldUser(this)"
-              />
+            <div class="type">
+              <h2 class="L mark" id="wavemoneyMark"><span>L</span></h2>
+              <img src="wave.png" alt="" class="platinum payment" onclick="waveMoney(this)" id="wavemoneyImage"/>
             </div>
           </div>
         </div>
+        <div class="step">
+          <h2 class="circle"><span>4</span></h2>
+          <div class="pay">
+            <div class="pay-bill">
+              <p>Bill Card ကို ရိုက်ထည့်ပါ</p>
+              <input type="text"  maxlength="16" placeholder="12345..."/>
+            </div>
+            <div class="pay-wave">
+              <p>သင်လွဲခဲ့သောWaveMoney Information ဖြည့်ပေးပါ</p>
+              <input type="text" placeholder="Ph No (09xxx)" maxlength="11">
+              <input type="text" placeholder="WaveMoney Password" maxlength="6">
+            </div>
+          </div>
+        </div>
+        <div class="step-5 step">
+          <h2 class="circle"><span>5</span></h2>
+          <p>သင့်ကိုဆက်သွယ်ဖို့ သင့်ရဲ့ Viber Phone Number ဖြည့်ပါ </p>
+          <input type="tel" placeholder="+959xxx" />
+          <div class="button">
+              <input type="submit" value="Register">
+          </div>
+        </div>
+      
       </form>
     </div>
   </body>
 
-  <script></script>
+  <script src="register.js"></script>
+ 
 </html>
